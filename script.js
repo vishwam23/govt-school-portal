@@ -24,12 +24,18 @@ function displayData(data) {
     });
 }
 
+
 function filterData() {
     let search = document.getElementById("search").value.toLowerCase();
 
+    if (!students || students.length === 0) {
+        console.log("No data loaded");
+        return;
+    }
+
     let filtered = students.filter(s =>
-        s.firstName.toLowerCase().includes(search) ||
-        s.lastName.toLowerCase().includes(search)
+        (s.firstName && s.firstName.toLowerCase().includes(search)) ||
+        (s.lastName && s.lastName.toLowerCase().includes(search))
     );
 
     displayData(filtered);
