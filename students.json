@@ -1,0 +1,6 @@
+[
+  { "firstName": "Rahul", "lastName": "Sharma", "class": "10", "rollNo": "101" },
+  { "firstName": "Priya", "lastName": "Verma", "class": "9", "rollNo": "102" },
+  { "firstName": "Amit", "lastName": "Kumar", "class": "10", "rollNo": "103" },
+  { "firstName": "Sneha", "lastName": "Singh", "class": "8", "rollNo": "104" }
+]
